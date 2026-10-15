@@ -1,0 +1,153 @@
+@model List<InvoiceStatisticsViewModel>
+
+@using Newtonsoft.Json
+
+@{
+    var labels = JsonConvert.SerializeObject(Model.Select(x => x.Date));
+    var data = JsonConvert.SerializeObject(Model.Select(x => x.TotalAmount));
+}
+<main>
+<main style="max-width: 1000px; margin: 0 auto; padding: 30px;">
+    <h2 style="text-align: center; font-family: 'Segoe UI', sans-serif; color: #2c3e50; margin-bottom: 30px;">
+        Tổng tiền bán hàng trong @(- ViewBag.Day) ngày trước của @ViewBag.BranchName
+    </h2>
+    <div>
+    <div style="margin-bottom: 20px; text-align: center; display: flex; flex-wrap: wrap; justify-content: space-between">
+        @{
+            var role = Context.Session.GetString("Roles");
+        }
+        @if(role == "1"){
+            <form asp-action="TotalAmount" method="get">
+            <label for="dayRange" style="font-weight: bold; margin-right: 10px;">Chọn số ngày thống kê:</label>
+            <select id="dayRange" name="day" onchange="this.form.submit()" style="padding: 5px 10px; border-radius: 5px;">
+                <option value="-1" selected="@(ViewBag.Day == -1)">1 ngày</option>
+                <option value="-3" selected="@(ViewBag.Day == -3)">3 ngày</option>
+                <option value="-7" selected="@(ViewBag.Day == -7)">7 ngày</option>
+                <option value="-14" selected="@(ViewBag.Day == -14)">14 ngày</option>
+                <option value="-30" selected="@(ViewBag.Day == -30)">30 ngày</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;
+            <label for="dayRange" style="font-weight: bold; margin-right: 10px;">Chọn chi nhánh thống kê:</label>
+            <select id="dayRange" name="branch" onchange="this.form.submit()" style="padding: 5px 10px; border-radius: 5px;">
+                @foreach (var item in ViewBag.Branches)
+                {
+                    <option value="@item.Value" selected="@(ViewBag.Branch == item.Value ? "selected" : null)">
+                        @item.Text
+                    </option>
+                }
+            </select>
+        </form>
+        }
+        else{
+            <form asp-action="TotalAmount" method="get">
+            <label for="dayRange" style="font-weight: bold; margin-right: 10px;">Chọn số ngày thống kê:</label>
+            <select id="dayRange" name="day" onchange="this.form.submit()" style="padding: 5px 10px; border-radius: 5px;">
+                <option value="-1" selected="@(ViewBag.Day == -1)">1 ngày</option>
+                <option value="-3" selected="@(ViewBag.Day == -3)">3 ngày</option>
+                <option value="-7" selected="@(ViewBag.Day == -7)">7 ngày</option>
+                <option value="-14" selected="@(ViewBag.Day == -14)">14 ngày</option>
+                <option value="-30" selected="@(ViewBag.Day == -30)">30 ngày</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;
+            <label for="dayRange" style="font-weight: bold; margin-right: 10px;">Chọn chi nhánh thống kê:</label>
+            <select id="dayRange" name="branch" onchange="this.form.submit()" style="padding: 5px 10px; border-radius: 5px;">
+                    <option value="@ViewBag.Emp_BranchName" selected="@(ViewBag.Emp_BranchID)">
+                        @ViewBag.Emp_BranchName
+                    </option>
+            </select>
+        </form>
+        }
+    </div>
+    </div>
+    <div style="background: #f9f9f9; padding: 20px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.1); ">
+        <canvas id="barChart" style="height: 1vh !important;"></canvas>
+    </div>
+</main>
+</main>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const labels = @Html.Raw(labels);
+    const data = @Html.Raw(data);
+
+    const ctx = document.getElementById('barChart').getContext('2d');
+
+    const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+    gradient.addColorStop(0, 'rgba(75,192,192,0.7)');
+    gradient.addColorStop(1, 'rgba(75,192,192,0.2)');
+
+    const myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Tổng tiền (VNĐ)',
+                data: data,
+                backgroundColor: gradient,
+                borderColor: 'rgba(75,192,192,1)',
+                borderWidth: 1,
+                borderRadius: 10,
+                hoverBackgroundColor: 'rgba(75,192,192,0.9)'
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: true,
+                    labels: {
+                        font: {
+                            size: 14,
+                            family: "'Segoe UI', sans-serif"
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            return context.dataset.label + ': ' + context.parsed.y.toLocaleString('vi-VN') + ' VNĐ';
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        font: {
+                            size: 13
+                        },
+                        callback: function (value) {
+                            return value.toLocaleString('vi-VN') + 'đ';
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Tổng tiền (VNĐ)',
+                        font: {
+                            size: 16,
+                            weight: 'bold'
+                        }
+                    }
+                },
+                x: {
+                    ticks: {
+                        font: {
+                            size: 13
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Ngày',
+                        font: {
+                            size: 16,
+                            weight: 'bold'
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>

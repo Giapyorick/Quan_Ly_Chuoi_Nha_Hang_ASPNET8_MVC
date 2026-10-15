@@ -1,0 +1,174 @@
+﻿@model GiapDepTrai.Models.TblTable
+
+    <main class="flex-grow-1 p-4 bg-light">
+        <div class="container-fluid text-center">
+
+        <h1 class="text-gradient mb-5 animate__animated animate__fadeInDown">Cập nhật thông tin bàn ăn</h1>
+
+        @if (Model is null)
+        {
+                    <p class="text-danger animate__animated animate__shakeX">Không tìm thấy ID</p>
+        }
+        else
+        {
+        <div class="profile-card shadow-lg p-4 bg-glass rounded-3 animate__animated animate__zoomIn">
+            <form method="post" asp-action="Edit">
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Mã bàn ăn</label>
+                        <input type="text" class="form-control form-control-lg text-center" asp-for="TableId" readonly />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Tên bàn ăn</label>
+                        <input type="text" class="form-control form-control-lg text-center" asp-for="TableName" required />
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Tên loại bàn</label>
+                        <select  class="form-control form-control-lg text-center" asp-for="TableTypeId" asp-items="ViewBag.Table_TypeTable" required>
+                            <option class="align-content-center" value="">-- Chọn loại bàn --</option>
+                        </select>
+                    </div>
+                    @{
+                        var role = Context.Session.GetString("Roles");
+                    }
+
+                    @if (role == "1")
+                    {
+                        <div class="form-group mt-3">
+                            <label class="form-label">Tên chi nhánh</label>
+                            <select class="form-control text-center" asp-for="BranchId" asp-items="ViewBag.Employees" required>
+                                <option value="">-- Chọn chi nhánh --</option>
+                            </select>
+                        </div>
+                    }
+                    else if(role == "2"){
+                        <div class="form-group mt-3">
+                            <label class="form-label">Tên chi nhánh</label>
+                            <select class="form-control text-center" asp-for="BranchId" required>
+                                <option value="@ViewBag.Emp_BranchID">@ViewBag.Emp_BranchName</option>
+                            </select>
+                        </div>
+                    }
+                    <div class="col-md-6">
+                        <label class="form-label">Trạng thái</label>
+                        <select class="form-control" asp-for="Status" required>
+                            <option value="">-- Chọn trạng thái --</option>
+                            <option value="Trỗng">Trỗng</option>
+                            <option value="Đã được đặt">Đã được đặt</option>
+                            <option value="Bảo trì">Bảo trì</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mt-4 d-flex justify-content-center gap-3">
+                    <button class="btn btn-dark btn-lg px-5 shadow-sm animate__animated animate__pulse" type="submit">Lưu</button>
+                    <form method="post">
+                        <button class="btn btn-danger btn-lg px-5 shadow-sm animate__animated animate__pulse" type="submit" asp-controller="tblTable" asp-action="Delete">Xóa</button>
+                    </form>
+                </div>
+
+
+                <div asp-validation-summary="All" class="text-danger mt-3"></div>
+            </form>
+        </div>
+                    
+        }
+        </div>
+    </main>
+
+<!-- CSS trong thẻ <style> -->
+<style>
+    /* Reset và kiểu cơ bản */
+    body, html {
+        height: 100%;
+        margin: 0;
+        background: #f5f5f5;
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+    }
+
+    /* Thanh menu bên trái */
+    .sidebar {
+        width: 250px;
+        min-height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .hover-link {
+        transition: all 0.3s ease;
+    }
+
+        .hover-link:hover {
+            background-color: #343a40;
+            padding-left: 15px;
+            box-shadow: inset 4px 0 0 #007bff;
+        }
+
+    /* Nội dung chính */
+    main {
+        margin-left: 250px;
+        min-height: 100vh;
+        background: #f5f5f5;
+    }
+
+    /* Tiêu đề gradient */
+    .text-gradient {
+        background: linear-gradient(90deg, #343a40, #007bff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Hiệu ứng kính mờ cho form */
+    .profile-card {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    /* Định dạng form */
+    .form-label {
+        font-weight: bold;
+        color: #343a40;
+    }
+
+    .form-control {
+        transition: all 0.3s ease;
+    }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+        }
+
+    /* Nút */
+    .btn-dark, .btn-danger {
+        transition: all 0.3s ease;
+    }
+
+        .btn-dark:hover {
+            background-color: #007bff;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-danger:hover {
+            background-color: #dc3545;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+    /* Shadow */
+    .shadow-lg {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+</style>

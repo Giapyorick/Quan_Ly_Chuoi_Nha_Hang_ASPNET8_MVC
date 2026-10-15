@@ -1,0 +1,16 @@
+﻿===== HÓA ĐƠN GỌI MÓN =====
+ID Đơn hàng: 93
+Bàn: 1
+Thời gian: 03/05/2025 16:28:05
+Chi nhánh: 1
+Nhân viên: 1
+----------------------------
+Chi tiết món:
+- Cơm risotto hải sản (Số lượng: 1, Số tiền: $120,000.00)
+  (Ghi chú: nhiều cớm)
+- Ngô chiên bơ (Số lượng: 1, Số tiền: $25,000.00)
+  (Ghi chú: ko bơ)
+----------------------------
+Tổng tiền: $145,000.00
+Cảm ơn quý khách!
+=============================

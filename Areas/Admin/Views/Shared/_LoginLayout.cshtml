@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - GiapDepTrai</title>
+    
+    <!--=============== REMIXICONS ===============-->
+    <link href="@Url.Content("~/assets/img/pavicon.jpg")" rel="icon" asp-append-version="true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="@Url.Content("~/Login/assets/css/styles.css")" asp-append-version="true">
+    
+    <!--=============== jQuery and Validation ===============-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+</head>
+<body>
+    @RenderBody()
+    
+    <script src="@Url.Content("~/Login/assets/js/main.js")" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

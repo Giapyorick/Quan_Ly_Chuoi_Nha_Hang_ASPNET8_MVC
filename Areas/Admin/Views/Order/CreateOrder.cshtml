@@ -1,0 +1,42 @@
+﻿
+@model List<GiapDepTrai.Models.TblTable>
+<main class="flex-grow-1 p-4 bg-light">
+    <div class="container-fluid text-center">
+        <h1 class="text-gradient mb-5 animate__animated animate__fadeInDown">Chọn bàn</h1>
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success animate__animated animate__fadeIn">@TempData["SuccessMessage"]</div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger animate__animated animate__fadeIn">@TempData["ErrorMessage"]</div>
+        }
+
+        <div class="row justify-content-center">
+            @foreach (var table in Model)
+            {
+                <div class="col-md-3 mb-4">
+                    <a href="@Url.Action("CreateOrder", "EmployeeOrder", new { tableId = table.TableId })" class="text-decoration-none">
+                        <div class="table-card @GetTableClass("Trống")">
+                            <h5 class="table-name">@table.TableName</h5>
+                            <p class="table-status"></p>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</main>
+@functions {
+    public string GetTableClass(string status)
+    {
+        return status switch
+        {
+            "Trống" => "table-empty",
+            "Báo trí" => "table-dirty",
+            "Có người đặt" => "table-occupied",
+            _ => "table-empty"
+        };
+    }
+}

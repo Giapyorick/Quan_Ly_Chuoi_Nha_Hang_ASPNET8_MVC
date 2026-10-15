@@ -1,0 +1,110 @@
+﻿
+@model IList<TblStoryHome>
+@{
+    var item = Model.FirstOrDefault(s => s.IsActive == true);
+    <!--begin section-grey-->
+    <section id="about" class="section-grey">
+
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row">
+
+                <!--begin col-md-6-->
+                <div class="col-md-6 wow slideInLeft">
+
+                    <img src="@item.Pic1" alt="picture" class="width-100">
+
+                </div>
+                <!--end col-md-6-->
+                <!--begin col-md-6-->
+                <div class="col-md-6 text-center padding-top-50 padding-bottom-50 wow slideInRight">
+
+                    <span class="comic-text">Khám phá</span>
+
+                    <h2 class="section-title">@item.Title1</h2>
+
+                    <p>@item.Contents1</p>
+
+                    <a href="about.html" class="btn btn-lg btn-yellow">Tìm hiểu thêm</a>
+
+                </div>
+                <!--end col-md-6-->
+
+            </div>
+            <!--end row-->
+
+        </div>
+        <!--end container-->
+
+    </section>
+    <!--end section-grey-->
+    <!--begin image-section -->
+    <div class="image-section">
+
+        <!--begin image-overlay -->
+        <div class="image-overlay">
+        </div>
+        <!--end image-overlay -->
+        <!--begin container-->
+        <div class="container image-section-inside">
+
+            <!--begin row-->
+            <div class="row">
+
+                <!--begin col-md-10-->
+                <div class="col-md-10 col-md-offset-1 text-center">
+
+                    <p class="hero-text2 white wow bounceIn">"@item.MainContents"</p>
+
+                </div>
+                <!--end col-md-6-->
+
+            </div>
+            <!--end row-->
+
+        </div>
+        <!--end container-->
+
+    </div>
+    <!--end image-section -->
+    <!--begin section-white-->
+    <section class="section-white">
+
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row">
+
+                <!--begin col-md-6-->
+                <div class="col-md-6 text-center padding-top-50 padding-bottom-50 wow slideInLeft">
+
+                    <span class="comic-text">Yêu thích</span>
+
+                    <h2 class="section-title">@item.Title2</h2>
+
+                    <p>@item.Contents2.</p>
+
+                    <a href="about.html" class="btn btn-lg btn-yellow">Khám phá thêm</a>
+
+                </div>
+                <!--end col-md-6-->
+                <!--begin col-md-6-->
+                <div class="col-md-6 wow slideInRight">
+
+                    <img src="@item.Pic2" alt="picture" class="width-100">
+
+                </div>
+                <!--end col-md-6-->
+
+            </div>
+            <!--end row-->
+
+        </div>
+        <!--end container-->
+
+    </section>
+    <!--end section-white-->
+}

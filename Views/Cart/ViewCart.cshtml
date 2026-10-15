@@ -1,0 +1,347 @@
+@model List<GiapDepTrai1.Models.TblCartItem>
+
+<div class="container cart-container">
+    @{
+        ViewData["Title"] = "Giỏ hàng của bạn";
+    }
+    <h2 class="cart-title">@ViewData["Title"]</h2>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible message-alert">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            @TempData["SuccessMessage"]
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible message-alert">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            @TempData["ErrorMessage"]
+        </div>
+    }
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info empty-cart-alert">
+            <i class="fas fa-shopping-cart"></i> Giỏ hàng trống.
+            <a href="/MenuItem" class="btn btn-outline-primary ml-3">Xem thực đơn</a>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table cart-table">
+                <thead>
+                    <tr>
+                        <th class="image-col">Ảnh</th>
+                        <th class="name-col">Tên món</th>
+                        <th class="quantity-col">Số lượng</th>
+                        <th class="price-col">Giá</th>
+                        <th class="note-col">Ghi chú</th>
+                        <th class="action-col">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        <tr class="cart-item-row">
+                            <td class="image-cell">
+                                @if (!string.IsNullOrEmpty(Model[i].MenuItem?.ImageUrl))
+                                {
+                                    <img src="~/@Model[i].MenuItem.ImageUrl" alt="@Model[i].MenuItem?.ItemName" class="cart-item-image img-thumbnail" />
+                                }
+                                else
+                                {
+                                    <div class="no-image-placeholder">
+                                        <i class="fas fa-utensils"></i>
+                                    </div>
+                                }
+                            </td>
+                            <td class="name-cell">@Model[i].MenuItem?.ItemName</td>
+                            <td class="quantity-cell">
+                                <form asp-action="UpdateCart" asp-controller="Cart" method="post" class="cart-form d-inline">
+                                    <input type="hidden" name="CartItems[@i].CartItemId" value="@Model[i].CartItemId" />
+                                    <div class="quantity-control">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm minus-btn" onclick="adjustQuantity(this, -1)">-</button>
+                                        <input type="number" name="CartItems[@i].Quantity" value="@Model[i].Quantity" min="1" class="form-control quantity-input" />
+                                        <button type="button" class="btn btn-outline-secondary btn-sm plus-btn" onclick="adjustQuantity(this, 1)">+</button>
+                                    </div>
+                                </form>
+                            </td>
+                            <td class="price-cell">@Model[i].Price.ToString("N0") VNĐ</td>
+                            <td class="note-cell">
+                                <form asp-action="UpdateCart" asp-controller="Cart" method="post" class="cart-form d-inline">
+                                    <input type="hidden" name="CartItems[0].CartItemId" value="@Model[i].CartItemId" />
+                                    <textarea name="CartItems[0].Note" class="form-control note-input" maxlength="250" rows="2">@Model[i].Note</textarea>
+                                </form>
+                            </td>
+                            <td class="action-cell">
+                                <form asp-action="RemoveFromCart" asp-controller="Cart" method="post" class="d-inline" onsubmit="return handleRemove(event)">
+                                    <input type="hidden" name="cartItemId" value="@Model[i].CartItemId" />
+                                    <button type="submit" class="btn btn-danger btn-sm remove-btn">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-right font-weight-bold">Tổng cộng:</td>
+                        <td class="font-weight-bold total-price">@Model.Sum(item => item.Price * item.Quantity).ToString("N0") VNĐ</td>
+                        <td colspan="2"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="cart-actions">
+            <a href="/MenuItem" class="btn btn-outline-secondary">
+                <i class="fas fa-chevron-left"></i> Tiếp tục chọn món
+            </a>
+            <form asp-action="UpdateCart" asp-controller="Cart" method="post" class="d-inline">
+                @Html.AntiForgeryToken()
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    <input type="hidden" name="CartItems[@i].CartItemId" value="@Model[i].CartItemId" />
+                    <input type="hidden" name="CartItems[@i].Quantity" value="@Model[i].Quantity" />
+                    <input type="hidden" name="CartItems[@i].Note" value="@Model[i].Note" />
+                }
+                <button type="submit" class="btn btn-primary update-btn">
+                    <i class="fas fa-sync-alt"></i> Cập nhật giỏ hàng
+                </button>
+            </form>
+            @{
+                var customerId = Context.Session.GetInt32("CustomerID");
+                <a asp-controller="ReservationCart" asp-action="ChooseBranch" class="btn btn-success checkout-btn">
+                    <i class="fas fa-calendar-check"></i> Đặt bàn
+                </a>
+            }
+        </div>
+    }
+</div>
+
+<style>
+    .cart-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px;
+        background: linear-gradient(135deg, #e6f0fa, #ffffff);
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .cart-title {
+        color: #2c3e50;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .message-alert, .empty-cart-alert {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .empty-cart-alert {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .empty-cart-alert i {
+        margin-right: 10px;
+        font-size: 1.3rem;
+    }
+
+    .cart-table {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart-table th {
+        background: linear-gradient(90deg, #3498db, #2980b9);
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .cart-table td {
+        padding: 15px;
+        vertical-align: middle;
+        border-top: 1px solid #e9ecef;
+    }
+
+    .cart-table tbody tr:hover {
+        background: #f8f9fa;
+    }
+
+    .cart-item-image {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid #dfe6e9;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .no-image-placeholder {
+        width: 80px;
+        height: 80px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6c757d;
+        font-size: 24px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .quantity-control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .quantity-input, .note-input {
+        border-radius: 8px;
+        border: 1px solid #dfe6e9;
+        padding: 8px;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+        transition: border-color 0.3s ease;
+    }
+
+    .quantity-input:focus, .note-input:focus {
+        border-color: #3498db;
+        box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+    }
+
+    .note-input {
+        resize: none;
+    }
+
+    .minus-btn, .plus-btn {
+        border-radius: 8px;
+        padding: 5px 10px;
+        font-weight: 500;
+    }
+
+    .remove-btn {
+        border-radius: 8px;
+        padding: 8px 12px;
+        background: linear-gradient(90deg, #e74c3c, #c0392b);
+        border: none;
+        box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+    }
+
+    .remove-btn:hover {
+        background: linear-gradient(90deg, #c0392b, #a93226);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(231, 76, 60, 0.4);
+    }
+
+    .total-price {
+        color: #e74c3c;
+        font-size: 1.1rem;
+    }
+
+    .cart-actions {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+        padding: 20px 0;
+        border-top: 1px solid #eee;
+    }
+
+    .btn {
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-weight: 500;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-primary {
+        background: linear-gradient(90deg, #3498db, #2980b9);
+        border: none;
+        box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+    }
+
+    .btn-primary:hover {
+        background: linear-gradient(90deg, #2980b9, #1f618d);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(52, 152, 219, 0.4);
+    }
+
+    .btn-success {
+        background: linear-gradient(90deg, #2ecc71, #27ae60);
+        border: none;
+        box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+    }
+
+    .btn-success:hover {
+        background: linear-gradient(90deg, #27ae60, #219653);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(46, 204, 113, 0.4);
+    }
+
+    .btn-outline-secondary {
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(108, 117, 125, 0.3);
+    }
+
+    .btn-outline-secondary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(108, 117, 125, 0.4);
+    }
+
+</style>
+
+<script>
+    function handleRemove(event) {
+        event.preventDefault();
+        if (confirm('Bạn có chắc muốn xóa món này khỏi giỏ hàng?')) {
+            event.target.closest('form').submit();
+        }
+        return false;
+    }
+
+    function adjustQuantity(button, change) {
+    var input = $(button).closest('.quantity-control').find('.quantity-input');
+    var newValue = parseInt(input.val()) + change;
+    if (newValue >= 1) {
+        input.val(newValue);
+        input.closest('form').submit(); 
+    }
+}
+
+    $(document).ready(function () {
+        var successMessage = '@TempData["SuccessMessage"]';
+        var errorMessage = '@TempData["ErrorMessage"]';
+        if (successMessage) {
+            alert(decodeURIComponent(successMessage));
+        } else if (errorMessage) {
+            alert(decodeURIComponent(errorMessage));
+        }
+    });
+</script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>

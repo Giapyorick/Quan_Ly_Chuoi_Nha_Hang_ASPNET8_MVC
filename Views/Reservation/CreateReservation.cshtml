@@ -1,0 +1,583 @@
+@model AddNewReservation
+@{
+    ViewData["Title"] = "Tạo đặt bàn";
+    var menuList = ViewBag.Order_MenuItem as SelectList;
+    var categories = ViewBag.Order_Categories as SelectList;
+}
+
+<main class="container reservation-container">
+    <h2 class="reservation-title">Khách hàng: @ViewBag.CustomerName đang đặt bàn và món ăn tại bàn: @ViewBag.TableName</h2>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible message-alert">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <form asp-controller="Reservation" asp-action="CreateReservation" method="post" class="reservation-form">
+        @Html.AntiForgeryToken()
+        
+        <input type="hidden" asp-for="CustomerId" />
+        <input type="hidden" asp-for="TableId" />
+
+        <div class="form-group">
+            <label class="form-label">Giờ nhận bàn</label>
+            <input asp-for="ReservationTime" class="form-control" type="datetime-local" />
+            <span asp-validation-for="ReservationTime" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Số người tới</label>
+            <input asp-for="NumberOfGuests" class="form-control" type="number" min="1" />
+            <span asp-validation-for="NumberOfGuests" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Ghi chú</label>
+            <textarea asp-for="Notes" class="form-control" rows="4"></textarea>
+            <span asp-validation-for="Notes" class="text-danger"></span>
+        </div>
+
+        <hr class="divider" />
+
+        <h4 class="section-title">Danh sách món ăn</h4>
+        <div class="table-responsive">
+            <table class="table menu-table" id="menuItemsTable">
+                <thead>
+                    <tr>
+                        <th>Món ăn</th>
+                        <th>Số lượng</th>
+                        <th>Ghi chú</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var i = 0; i < Model.MenuItems?.Count; i++)
+                    {
+                        <tr class="border-b hover:bg-blue-50 transition-colors">
+                            <td>
+                                <input type="hidden" asp-for="MenuItems[i].MenuItemId" />
+                                @{
+                                    var menuItemName = "-- Chọn món --";
+                                    if (ViewBag.Order_MenuItemAll != null)
+                                    {
+                                        var item = ((IEnumerable<dynamic>)ViewBag.Order_MenuItemAll).FirstOrDefault(m => m.MenuItemId.ToString() == Model.MenuItems[i].MenuItemId.ToString());
+                                        menuItemName = item?.ItemName ?? menuItemName;
+                                    }
+                                }
+                                <span>@menuItemName</span>
+                            </td>
+                            <td>
+                                <input asp-for="MenuItems[i].Quantity" type="number" class="form-control quantity-input" min="0" readonly />
+                            </td>
+                            <td>
+                                <input asp-for="MenuItems[i].Note" class="form-control note-input" readonly />
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-sm remove-btn" onclick="removeMenuItem.call(this, this)">
+                                    <i class="fas fa-trash-alt"></i> Xóa
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form-actions">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#menuModal">
+                <i class="fas fa-plus"></i> Chọn món
+            </button>
+            <button type="submit" class="btn btn-success">
+                <i class="fas fa-save"></i> Lưu đặt bàn
+            </button>
+        </div>
+    </form>
+
+    <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"  id="menuModalLabel" style="color: white;">Chọn món ăn</h4>
+                    <button type="button" style="display: flex; flex-wrap:wrap ; justify-content: center; width: 50px; height: 30px; background-color: red; margin-top: -30px;" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="font-size: 16px; color: white; margin-top: 8px;">X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="sticky-top filter-bar">
+                        <div class="form-group">
+                            <select id="categoryFilter" class="form-control" asp-items="categories">
+                                <option value="">Tất cả</option>
+                            </select>
+                        </div>
+                        <div class="branch-info">
+                            <i class="fas fa-store-alt"></i> @ViewBag.BranchName
+                        </div>
+                    </div>
+
+                    <div class="menu-list">
+                        @foreach (var item in ViewBag.Order_MenuItemAll)
+                        {
+                            <div class="menu-item" data-category="@item.CategoryId">
+                                <div class="menu-item-content">
+                                    <div class="menu-item-image">
+                                        <img src="~/@item.ImageUrl" alt="@item.ItemName" class="img-fluid" style="margin-top: 40px;" />
+                                    </div>
+                                    <div class="menu-item-details">
+                                        <div style = "display: flex; flex-wrap:wrap ; justify-content: left;">
+                                            <h5 class="item-name" style="width:100%;">@item.ItemName</h5>
+                                            <p class="item-description text-muted" style="width:100%;">@item.Descriptions</p>
+                                            <p class="item-price text-danger" style="width:100%;">@item.Price?.ToString("N0") VNĐ</p>
+                                        </div>
+                                        <div class="form-group" style="width: 100%;">
+                                            <input type="text" class="form-control" style="width:400px;" placeholder="Ghi chú" data-id="@item.MenuItemId" />
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-actions" style="margin-top: 50px;">
+                                        <div class="quantity-control">
+                                            <input type="number" class="form-control quantity-input" value="0" min="1" data-id="@item.MenuItemId" />
+                                            <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                            <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                                        </div>
+                                        <button class="btn btn-success btn-sm add-btn" data-id="@item.MenuItemId" data-name="@item.ItemName" data-price="@item.Price">
+                                            <i class="fas fa-plus"></i> Thêm
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary" id="btnAddSelected">
+                        <i class="fas fa-check"></i> Xác nhận
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<style>
+    .reservation-container {
+        max-width: 900px;
+        margin: 120px auto 100px;
+        padding: 30px;
+        background: linear-gradient(135deg, #e6f0fa, #ffffff);
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .reservation-title {
+        color: #2c3e50;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .message-alert {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .reservation-form {
+        margin-top: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        display: block;
+        color: #2c3e50;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        border: 1px solid #dfe6e9;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-control:focus {
+        border-color: #3498db;
+        box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+        outline: none;
+    }
+
+    .text-danger {
+        font-size: 14px;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .divider {
+        border-top: 1px solid #dfe6e9;
+        margin: 20px 0;
+    }
+
+    .section-title {
+        color: #2c3e50;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .menu-table {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-table th {
+        background: linear-gradient(90deg, #3498db, #2980b9);
+        color: white;
+        padding: 15px;
+        font-weight: 500;
+    }
+
+    .menu-table td {
+        padding: 15px;
+        vertical-align: middle;
+        border-top: 1px solid #e9ecef;
+    }
+
+    .menu-table tbody tr:hover {
+        background: #f8f9fa;
+    }
+
+    .quantity-input, .note-input {
+        max-width: 100px;
+    }
+
+    .remove-btn {
+        border-radius: 8px;
+        padding: 8px 12px;
+        background: linear-gradient(90deg, #e74c3c, #c0392b);
+        border: none;
+        box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+    }
+
+    .remove-btn:hover {
+        background: linear-gradient(90deg, #c0392b, #a93226);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(231, 76, 60, 0.4);
+    }
+
+    .form-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-weight: 500;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-primary {
+        background: linear-gradient(90deg, #3498db, #2980b9);
+        border: none;
+        box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+    }
+
+    .btn-primary:hover {
+        background: linear-gradient(90deg, #2980b9, #1f618d);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(52, 152, 219, 0.4);
+    }
+
+    .btn-success {
+        background: linear-gradient(90deg, #2ecc71, #27ae60);
+        border: none;
+        box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+    }
+
+    .btn-success:hover {
+        background: linear-gradient(90deg, #27ae60, #219653);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(46, 204, 113, 0.4);
+    }
+
+    .btn i {
+        margin-right: 8px;
+    }
+
+    .modal-content {
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-header {
+        background: linear-gradient(90deg, #3498db, #2980b9);
+        color: white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .modal-title {
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .filter-bar {
+        background: #f8f9fa;
+        padding: 15px;
+        border-bottom: 1px solid #dfe6e9;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .branch-info {
+        font-size: 18px;
+        color: #6c757d;
+    }
+
+    .menu-list {
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+
+    .menu-item {
+        padding: 15px;
+        border-bottom: 1px solid #dfe6e9;
+    }
+
+    .menu-item-content {
+        display: flex;
+        gap: 15px;
+        background: #fff;
+        border: 1px solid #dfe6e9;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item-image {
+        flex: 0 0 120px;
+    }
+
+    .menu-item-image img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid #dfe6e9;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item-details {
+        flex: 1;
+    }
+
+    .item-name {
+        font-size: 20px;
+        font-weight: 600;
+        color: #3498db;
+        margin-bottom: 5px;
+    }
+
+    .item-description {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .item-price {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .menu-item-actions {
+        flex: 0 0 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .quantity-control {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .quantity-input {
+        width: 60px;
+        text-align: center;
+    }
+
+    .minus-btn, .plus-btn {
+        border-radius: 8px;
+        padding: 5px 10px;
+        font-weight: 500;
+    }
+
+    .add-btn {
+        border-radius: 8px;
+        padding: 8px 15px;
+        width: 100%;
+    }
+
+    .modal-footer {
+        border-top: 1px solid #dfe6e9;
+    }
+
+
+</style>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+        if (typeof revslider_showDoubleJqueryError === "undefined") {
+            window.revslider_showDoubleJqueryError = function () { };
+        }
+
+        $(document).ready(function () {
+            $('.popup-image').magnificPopup({
+                type: 'image',
+                closeOnContentClick: true,
+                mainClass: 'mfp-img-mobile',
+                image: { verticalFit: true }
+            });
+
+            $('#categoryFilter').change(function () {
+                var categoryId = $(this).val();
+                $('.menu-item').each(function () {
+                    if (!categoryId || $(this).data('category') == categoryId) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+
+            $(document).on('click', '.plus-btn', function () {
+                var input = $(this).closest('.quantity-control').find('.quantity-input');
+                input.val(parseInt(input.val()) + 1);
+                $(this).closest('.menu-item').toggleClass('selected', parseInt(input.val()) > 0);
+            });
+
+            $(document).on('click', '.minus-btn', function () {
+                var input = $(this).closest('.quantity-control').find('.quantity-input');
+                if (parseInt(input.val()) > 0) {
+                    input.val(parseInt(input.val()) - 1);
+                }
+                $(this).closest('.menu-item').toggleClass('selected', parseInt(input.val()) > 0);
+            });
+
+            $(document).on('click', '.add-btn', function () {
+                var menuItemId = $(this).data('id');
+                var name = $(this).data('name');
+                var price = $(this).data('price');
+                var quantity = $(this).closest('.menu-item-actions').find('.quantity-input').val();
+                var note = $(this).closest('.menu-item-content').find('.note-input').val();
+                if (parseInt(quantity) > 0) {
+                    addMenuItemToTable(menuItemId, name, price, quantity, note);
+                    $(this).closest('.menu-item').find('.quantity-input').val('0');
+                    $(this).closest('.menu-item').find('.note-input').val('');
+                }
+            });
+
+            $('#btnAddSelected').click(function () {
+                $('.menu-item:visible').each(function () {
+                    var quantity = $(this).find('.quantity-input').val();
+                    if (parseInt(quantity) > 0) {
+                        var menuItemId = $(this).find('.add-btn').data('id');
+                        var name = $(this).find('.add-btn').data('name');
+                        var price = $(this).find('.add-btn').data('price');
+                        var note = $(this).find('.note-input').val();
+                        addMenuItemToTable(menuItemId, name, price, quantity, note);
+                        $(this).find('.quantity-input').val('0');
+                        $(this).find('.note-input').val('');
+                    }
+                });
+                $('#menuModal').modal('hide');
+            });
+
+            function addMenuItemToTable(menuItemId, name, price, quantity, note) {
+                var $tableBody = $('#menuItemsTable tbody');
+                var existingRow = $tableBody.find(`input[value="${menuItemId}"]`).closest('tr');
+                if (existingRow.length > 0) {
+                    var currentQty = parseInt(existingRow.find('input[name*="Quantity"]').val());
+                    existingRow.find('input[name*="Quantity"]').val(currentQty + parseInt(quantity));
+                    if (note) {
+                        existingRow.find('input[name*="Note"]').val(note);
+                    }
+                } else {
+                    var index = $tableBody.find('tr').length;
+                    var newRow = `
+                        <tr class="border-b hover:bg-blue-50 transition-colors">
+                            <td data-label="Món ăn">
+                                <input type="hidden" name="MenuItems[${index}].MenuItemId" value="${menuItemId}" />
+                                <span>${name}</span>
+                            </td>
+                            <td data-label="Số lượng">
+                                <input name="MenuItems[${index}].Quantity" type="number" 
+                                    class="form-control quantity-input" min="1" value="${quantity}" readonly />
+                            </td>
+                            <td data-label="Ghi chú">
+                                <input name="MenuItems[${index}].Note" style="width:400px;" class="form-control note-input" 
+                                    value="${note}" readonly />
+                            </td>
+                            <td data-label="">
+                                <button type="button" class="btn btn-danger btn-sm remove-btn" onclick="removeMenuItem.call(this, this)">
+                                    <i class="fas fa-trash-alt"></i> Xóa
+                                </button>   
+                            </td>
+                        </tr>
+                    `;
+                    $tableBody.append(newRow);
+                }
+            }
+
+            $(document).on('click', '.remove-btn', function() {
+                $(this).closest('tr').remove();
+                $('#menuItemsTable tbody tr').each(function (index) {
+                    $(this).find('input').each(function () {
+                        var name = $(this).attr('name');
+                        if (name) {
+                            var newName = name.replace(/MenuItems\[\d+\]/g, `MenuItems[${index}]`);
+                            $(this).attr('name', newName);
+                        }
+                    });
+                });
+            });
+
+            $(document).on('hidden.bs.modal', '#menuModal', function () {
+                $('body').removeClass('modal-open');
+                $('.modal-backdrop').remove();
+            });
+
+            $('form').submit(function () {
+                $(this).find('button[type="submit"]').prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Đang xử lý...');
+            });
+        });
+    </script>
+}

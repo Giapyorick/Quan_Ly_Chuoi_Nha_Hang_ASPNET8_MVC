@@ -1,0 +1,154 @@
+@model IEnumerable<GiapDepTrai.Models.TblReservation>
+
+<div class="container payment-history-container">
+    <h4 class="history-title">Lịch sử thanh toán đặt cọc</h4>
+    <div class="table-responsive">
+        <table class="table payment-table" style="min-width: 1400px;">
+            <thead>
+                <tr>
+                    <th class="px-6 py-4 text-left">STT</th>
+                    <th class="px-6 py-4 text-left">Mã đặt bàn</th>
+                    <th class="px-6 py-4 text-left">Tên khách hàng</th>
+                    <th class="px-6 py-4 text-left">Tên bàn</th>
+                    <th class="px-6 py-4 text-left">Số lượng khách</th>
+                    <th class="px-6 py-4 text-left">Tên món ăn</th>
+                    <th class="px-6 py-4 text-left">Chi nhánh</th>
+                    <th class="px-6 py-4 text-left">Số lượng</th>
+                    <th class="px-6 py-4 text-left">Ghi chú món</th>
+                    <th class="px-6 py-4 text-left">Thời gian đặt bàn</th>
+                    <th class="px-6 py-4 text-left">Trạng thái</th>
+                    <th class="px-6 py-4 text-left">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model == null || !Model.Any())
+                {
+                    <tr>
+                        <td colspan="12" class="px-6 py-4 text-center text-danger">Không có lịch sử thanh toán.</td>
+                    </tr>
+                }
+                else
+                {
+                    int index = 1;
+                    foreach (var reservation in Model)
+                    {
+                        foreach (var item in reservation.TblReservationMenuItems)
+                        {
+                            <tr class="shadow-sm hover-row">
+                                <td>@index</td>
+                                <td>@reservation.ReservationId</td>
+                                <td>@reservation.Customer?.FullName</td>
+                                <td>@reservation.Table?.TableName</td>
+                                <td>@reservation.NumberOfGuests</td>
+                                <td>@item.MenuItem?.ItemName</td>
+                                <td>@reservation.Branch?.BranchName</td>
+                                <td>@item.Quantity</td>
+                                <td>@reservation.Notes</td>
+                                <td>
+                                    @if (reservation.ReservationTime.HasValue)
+                                    {
+                                        @reservation.ReservationTime.Value.ToString("dd-MM-yyyy HH:mm:ss")
+                                    }
+                                    else
+                                    {
+                                        @:Chưa xác định
+                                    }
+                                </td>
+                                <td>@reservation.Status</td>
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@reservation.ReservationId" class="btn btn-sm btn-info">Chi tiết</a>
+                                </td>
+                            </tr>
+                            index++;
+                        }
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+	<div class="pagination-container text-center mt-4">
+    @if (ViewBag.TotalPages > 1)
+    {
+        <nav>
+            <ul class="pagination justify-content-center">
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                    <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                        <a class="page-link" asp-action="List" asp-route-page="@i">@i</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    }
+</div>
+
+</div>
+
+<style>
+	.pagination .page-item .page-link {
+    color: #3498db;
+	}
+	.pagination .page-item.active .page-link {
+		background-color: #3498db;
+		border-color: #3498db;
+		color: white;
+	}
+	.table-responsive {
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+    .payment-history-container {
+        max-width: 1200px;
+        margin: 100px auto 50px;
+        padding: 30px;
+        background: linear-gradient(135deg, #e6f0fa, #ffffff);
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .history-title {
+        color: #2c3e50;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .table-responsive {
+        margin: 20px;
+    }
+
+    .payment-table {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+
+    .payment-table th {
+        background: linear-gradient(90deg, #3498db, #2980b9);
+        color: white;
+        padding: 15px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .payment-table td {
+        padding: 15px;
+        vertical-align: middle;
+        border-top: 1px solid #e9ecef;
+        color: #34495e;
+    }
+
+    .payment-table tbody tr:hover {
+        background: #f8f9fa;
+    }
+
+    .text-danger {
+        color: #e74c3c;
+    }
+</style>

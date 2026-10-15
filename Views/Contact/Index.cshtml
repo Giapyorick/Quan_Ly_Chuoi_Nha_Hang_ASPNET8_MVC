@@ -1,0 +1,88 @@
+@model GiapDepTrai.Models.AddNewContact
+    <!--begin contact-hero-section -->
+    <section id="hero-section" class="contact-hero-section">
+    
+        <!--begin image-overlay -->
+        <div class="image-overlay"></div>
+        <!--end image-overlay -->
+            
+        <!--begin container-->
+        <div class="container image-section-inside">
+
+            <!--begin row-->
+            <div class="row">
+            
+                <!--begin col-md-10-->
+                <div class="col-md-10 col-md-offset-1 text-center">
+                
+                    <span class="comic-text wow fadeIn" data-wow-delay="0.5s">La Fable</span>
+                    
+                    <h2 class="section-title white wow bounceIn" data-wow-delay="1s">Liên lạc chúng tôi</h2>
+                    
+                    <p class="hero-text wow fadeInUp" data-wow-delay="2s">Nếu như bạn có thắc mắc hoặc yếu cầu có thể liên hệ qua: <strong>+44 123 45 67 890</strong><br>Hoặc bạn có thể gửi trực tiếp thông qua biểu mẫu dưới này.</p>
+                    
+                </div>
+                <!--end col-md-10-->
+            
+            </div>
+            <!--end row-->
+            
+        </div>
+        <!--end container-->    
+        
+    </section>
+    <!--end contact-hero-section -->
+    
+    <!--begin section-grey-->
+    <section class="section-grey">
+    
+      <!--begin container-->
+      <div class="container"> 
+
+            <!--begin row-->
+            <div class="row">
+            
+                <!--begin col-md-10-->
+                <div class="col-md-10 col-md-offset-1 text-center">
+                
+                	<h3 class="section-title small-margin wow fadeIn" data-wow-delay="0.5s">BIỂU MẪU LIÊN LẠC</h3>
+                    
+                    <p class="wow fadeInUp" data-wow-delay="1s">Dưỡi đây là một số thông tin bạn cần điền vào.</p>
+                    
+                    <!--begin contact-wrapper-->
+                    <div class="contact-wrapper">
+                
+                        <!--begin success message -->
+                        <p class="contact_success_box" style="display:none;">Chúng tôi đã nhận và sẽ liên hệ bạn lại sau. Cảm ơn bạn nhiều!</p>
+                        <!--end success message -->
+                        <!--begin contact form -->
+                        <form id="contact-form" class="contact" method="post">
+                        <div class="col-md-6 wow slideInLeft" data-wow-delay="0.5s">
+                            <input class="contact-input white-input" placeholder="Nhập họ và tên*" type="text" asp-for="Name" required />
+                            <input class="contact-input white-input" placeholder="Địa chỉ email*" type="email" asp-for="Email" required  />
+                            <input class="contact-input white-input" placeholder="Số điện thoại*" type="text" asp-for="Phone" required />
+                        </div>
+                        
+                        <div class="col-md-6 wow slideInRight" data-wow-delay="0.5s">
+                            <textarea class="contact-commnent white-input" rows="2" cols="20" placeholder="Ghi chú..." asp-for="Message"></textarea>
+                        </div>
+
+                        <input value="Gửi biểu mẫu" id="submit-button" class="contact-submit wow fadeInUp" data-wow-delay="1s" type="submit">
+                        <div asp-validation-summary="All" class="text-danger mt-3"></div>
+                    </form>
+                        <!--end contact form -->
+                    
+                    </div>
+                    <!--end contact-wrapper-->
+                    
+                </div>
+                <!--end col-md-10-->
+                
+            </div>
+            <!--end row-->
+            
+        </div>
+        <!--end container-->
+        
+    </section>
+    <!--end section-grey-->

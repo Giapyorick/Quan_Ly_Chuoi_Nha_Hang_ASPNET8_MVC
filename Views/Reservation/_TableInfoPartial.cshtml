@@ -1,0 +1,17 @@
+@model GiapDepTrai.Models.TblTable
+
+@if (Model.TblReservations != null && Model.TblReservations.Any())
+{
+    var reservation = Model.TblReservations.FirstOrDefault();
+
+    <div>
+        <p><strong>Khách hàng:</strong> @reservation.Customer?.FullName</p>
+        <p><strong>Số người:</strong>@reservation.NumberOfGuests</p>
+        <p><strong>Thời gian:</strong> @reservation.ReservationTime?.ToString("HH:mm dd/MM/yyyy")</p>
+        <p><strong>Ghi chú:</strong> @reservation.Notes</p>
+    </div>
+}
+else
+{
+    <p>Bàn chưa có lượt đặt nào.</p>
+}

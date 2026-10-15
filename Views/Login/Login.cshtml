@@ -1,0 +1,103 @@
+@using GiapDepTrai.Utilities;
+@model GiapDepTrai.Models.TblCustomer;
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<svg class="login__blob" viewBox="0 0 566 840" xmlns="http://www.w3.org/2000/svg">
+    <mask id="mask0" mask-type="alpha">
+        <path d="M342.407 73.6315C388.53 56.4007 394.378 17.3643 391.538
+            0H566V840H0C14.5385 834.991 100.266 804.436 77.2046 707.263C49.6393
+            591.11 115.306 518.927 176.468 488.873C363.385 397.026 156.98 302.824
+            167.945 179.32C173.46 117.209 284.755 95.1699 342.407 73.6315Z" />
+    </mask>
+
+    <g mask="url(#mask0)">
+        <path d="M342.407 73.6315C388.53 56.4007 394.378 17.3643 391.538
+            0H566V840H0C14.5385 834.991 100.266 804.436 77.2046 707.263C49.6393
+            591.11 115.306 518.927 176.468 488.873C363.385 397.026 156.98 302.824
+            167.945 179.32C173.46 117.209 284.755 95.1699 342.407 73.6315Z" />
+        <!-- Đường dẫn ảnh SVG -->
+        <image href="@Url.Content("~/Login/assets/img/bg-img3.jpg")" />
+    </g>
+</svg>
+
+<!-- Login Form -->
+<div class="login container grid" id="loginAccessRegister">
+    <div class="login__access">
+        <h1 class="login__title">Đăng nhập.</h1>
+        @if (TempData["ErrorMessage"] != null)
+            {
+                <div style ="color:crimson;">@TempData["ErrorMessage"]</div>
+            }
+        @if (ViewBag.ErrorMessage != null)
+            {
+                <div style="color:crimson;">@ViewBag.ErrorMessage</div>
+            }
+
+        <div class="login__area">
+        @{
+            var returnUrl = Context.Request.Query["returnUrl"].ToString();
+        }
+        <form asp-controller="Login" asp-action="Login" method="post" class="login__form">
+            <input type="hidden" name="returnUrl" value="@returnUrl" />
+                <div class="login__content grid">
+                    <div class="login__box">
+                        <input type="text" id="email" required placeholder=" " class="login__input" asp-for="Email">
+                        <label for="text" class="login__label">Tên đăng nhập</label>
+                        <i class="ri-mail-fill login__icon"></i>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="login__box">
+                        <input type="password" id="password" required placeholder=" " class="login__input" asp-for="Passwork">
+                        <label for="password" class="login__label">Mật khẩu</label>
+                        <i class="ri-eye-off-fill login__icon login__password" id="loginPassword"></i>
+                        <span asp-validation-for="Passwork" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <a href="#" class="login__forgot">Bạn quên mật khẩu?</a>
+                 <div class="g-recaptcha" data-sitekey="6Ld0qUgrAAAAAKwlLWIaJEGovjsm7Takb2I8LTmF"></div>
+                <button type="submit" class="login__button">Đăng nhập</button>
+
+                <div class="mb-2">
+
+                </div>
+            </form>
+
+            <div class="login__social">
+                <p class="login__social-title">Hoặc đăng nhập bằng</p>
+                <div class="login__social-links">
+                    <a href="#" class="login__social-link">
+                        <img src="~/Login/assets/img/icon-google.svg" alt="Google" class="login__social-img">
+                    </a>
+                    <a href="#" class="login__social-link">
+                        <img src="~/Login/assets/img/icon-facebook.svg" alt="Facebook" class="login__social-img">
+                    </a>
+                </div>
+            </div>
+
+            <p class="login__switch">
+                Bạn chưa có tài khoản?
+                <button id="loginButtonRegister" type="button">Tạo tài khoản</button>
+            </p>
+        </div>
+    </div>
+</div>
+}
+@{
+    var successMessage = TempData["SuccessMessage"]?.ToString();
+}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+$(document).ready(function () {
+            var successMessage = '@TempData["SuccessMessage"]';
+            if (successMessage) {
+                alert(successMessage);
+            }
+        });
+</script>
+

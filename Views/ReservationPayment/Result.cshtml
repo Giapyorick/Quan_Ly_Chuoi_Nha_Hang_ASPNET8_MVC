@@ -1,0 +1,142 @@
+@model GiapDepTrai.Models.TblReservationPayment
+
+<div class="container payment-container">
+    <div class="payment-card">
+        <div class="card-body text-center">
+            <h4 class="card-title">Thanh toán thành công</h4>
+
+            <div class="info-item">
+                <strong>Mã giao dịch:</strong>
+                <span>@Model.PaymentId</span>
+            </div>
+
+            <div class="info-item">
+                <strong>Tên tài khoản:</strong>
+                <span>@Model.Reservation.Customer.FullName</span>
+            </div>
+
+            <div class="info-item">
+                <strong>Ngân hàng:</strong>
+                <span>ViettinBank</span>
+            </div>
+
+            <div class="info-item">
+                <strong>Tổng tiền:</strong>
+                <span>@Model.AmountPaid.ToString("#,##0.0") VNĐ</span>
+            </div>
+
+            <div class="info-item">
+                <strong>Ghi chú:</strong>
+                <span>@Model.Notes</span>
+            </div>
+
+            <div class="action-buttons">
+                <a href="/" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Về trang chủ
+                </a>
+                <a href="/ReservationPayment/History" class="btn btn-outline-secondary">
+                    <i class="fas fa-history"></i> Xem lịch sử đặt
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .payment-container {
+        max-width: 1000px;
+        margin: 100px auto 50px;
+        padding: 20px;
+        background: linear-gradient(135deg, #e6f0fa, #ffffff);
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+    }
+
+    .payment-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .card-body {
+        padding: 30px;
+    }
+
+    .card-title {
+        color: #2ecc71;
+        font-weight: 600;
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .info-item {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #34495e;
+    }
+
+    .info-item strong {
+        display: block;
+        color: #2c3e50;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .info-item span {
+        display: block;
+    }
+
+    .action-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .btn {
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-weight: 500;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-align: center;
+    }
+
+    .btn-primary {
+        background: linear-gradient(90deg, #3498db, #2980b9);
+        border: none;
+        color: white;
+        box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+    }
+
+    .btn-primary:hover {
+        background: linear-gradient(90deg, #2980b9, #1f618d);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(52, 152, 219, 0.4);
+    }
+
+    .btn-outline-secondary {
+        border: 1px solid #6c757d;
+        color: #6c757d;
+        background: transparent;
+        box-shadow: 0 4px 10px rgba(108, 117, 125, 0.3);
+    }
+
+    .btn-outline-secondary:hover {
+        background: #f8f9fa;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(108, 117, 125, 0.4);
+    }
+
+    .btn i {
+        margin-right: 8px;
+    }
+
+
+    }
+</style>

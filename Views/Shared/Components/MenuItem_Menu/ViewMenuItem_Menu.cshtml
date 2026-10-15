@@ -1,0 +1,200 @@
+@model List<TblMenuItem>
+<section class="section-grey">
+        
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row">
+            
+                <!--begin col-md-6-->
+                <div class="col-md-6">
+                
+                    <h2 class="menu-section-title">Đồ ăn</h2>
+                    @foreach (var item in Model.Where(i => i.IsAvailable == true && i.CategoryId == 1).Take(4))
+        			{
+                    <!--begin menu-wrapper-->
+                    <div class="menu-wrapper">
+                        
+                        <!--begin menu-image-->
+                        <div class="menu-image">
+                        
+                        	<img src="@item.ImageUrl" class="width-100" alt="food">
+                            <a href="http://localhost:5214/MenuItem/Details?id=@item.MenuItemId">
+                                
+                        </div>
+                        <!--end menu-image-->
+                         
+                        <!--begin menu-description-->
+                        <div class="menu-description">
+                           
+                            <!--begin menu-list-->
+                            <div class="menu-list">
+                            
+                                <h5>@item.ItemName</h5>
+                                
+                                <p class="price">@item.Price</p>
+                                
+                                <span class="menu-dot-line"></span>
+                                
+                            </div>
+                            <!--end menu-list-->
+                            
+                            <p class="menu-ingredients">@item.Descriptions</p>
+                                
+                        </div>
+						
+                        <!--end menu-description-->
+                                
+                    </div>
+                    <!--end menu-wrapper-->
+                    }
+                    
+                </div>
+                <!--end col-md-6-->
+            
+                <!--begin col-md-6-->
+                <div class="col-md-6">
+                
+                    <h2 class="menu-section-title">Đồ uống</h2>
+                    @foreach (var item1 in Model.Where(i => i.IsAvailable == true && i.CategoryId == 3).Take(4))
+        			{
+                    <!--begin menu-wrapper-->
+                    <div class="menu-wrapper">
+                        
+                        <!--begin menu-image-->
+                        <div class="menu-image">
+                        
+                        	<img src="@item1.ImageUrl" class="width-100" alt="food">
+                            <a href="http://localhost:5214/MenuItem/Details?id=@item1.MenuItemId">
+                                
+                        </div>
+                        <!--end menu-image-->
+                         
+                        <!--begin menu-description-->
+                        <div class="menu-description">
+                           
+                            <!--begin menu-list-->
+                            <div class="menu-list">
+                            
+                                <h5>@item1.ItemName</h5>
+                                
+                                <p class="price">@item1.Price</p>
+                                
+                                <span class="menu-dot-line"></span>
+                                
+                            </div>
+                            <!--end menu-list-->
+                            
+                            <p class="menu-ingredients">@item1.Descriptions</p>
+                                
+                        </div>
+                        <!--end menu-description-->
+                                
+                    </div>
+					}
+                    <!--end menu-wrapper-->   
+                </div>
+                <!--end col-md-6-->
+            
+            </div>
+            <!--end row-->
+            
+            <!--begin row-->
+            <div class="row">
+            
+                <!--begin col-md-6-->
+                <div class="col-md-6">
+                
+                    <h2 class="menu-section-title">Tráng miệng</h2>
+                    @foreach (var item2 in Model.Where(i => i.IsAvailable == true && i.CategoryId == 2).Take(4))
+        			{
+                    <!--begin menu-wrapper-->
+                    <div class="menu-wrapper">
+                        
+                        <!--begin menu-image-->
+                        <div class="menu-image">
+                        
+                        	<img src="@item2.ImageUrl" class="width-100" alt="food">
+                            <a href="http://localhost:5214/MenuItem/Details?id=@item2.MenuItemId">
+                                
+                        </div>
+                        <!--end menu-image-->
+                         
+                        <!--begin menu-description-->
+                        <div class="menu-description">
+                           
+                            <!--begin menu-list-->
+                            <div class="menu-list">
+                            
+                                <h5>@item2.ItemName</h5>
+                                
+                                <p class="price">@item2.Price</p>
+                                
+                                <span class="menu-dot-line"></span>
+                                
+                            </div>
+                            <!--end menu-list-->
+                            
+                            <p class="menu-ingredients">@item2.Descriptions</p>
+                                
+                        </div>
+                        <!--end menu-description-->
+                                
+                    </div>
+					}
+                    <!--end menu-wrapper-->
+                </div>
+                <!--end col-md-6-->
+            
+                <!--begin col-md-6-->
+                <div class="col-md-6">
+                
+                    <h2 class="menu-section-title">Ăn vặt</h2>
+                    @foreach (var item3 in Model.Where(i => i.IsAvailable == true && i.CategoryId == 5).Take(4))
+        			{
+                    <!--begin menu-wrapper-->
+                    <div class="menu-wrapper">
+                        
+                        <!--begin menu-image-->
+                        <div class="menu-image">
+                        
+                        	<img src="@item3.ImageUrl" class="width-100" alt="food">
+                            <a href="http://localhost:5214/MenuItem/Details?id=@item3.MenuItemId">
+                                
+                        </div>
+                        <!--end menu-image-->
+                         
+                        <!--begin menu-description-->
+                        <div class="menu-description">
+                           
+                            <!--begin menu-list-->
+                            <div class="menu-list">
+                            
+                                <h5>@item3.ItemName</h5>
+                                
+                                <p class="price">@item3.Price</p>
+                                
+                                <span class="menu-dot-line"></span>
+                                
+                            </div>
+                            <!--end menu-list-->
+                            
+                            <p class="menu-ingredients">@item3.Descriptions</p>
+                                
+                        </div>
+                        <!--end menu-description-->
+                                
+                    </div>
+					}
+                    <!--end menu-wrapper-->     
+                </div>
+                <!--end col-md-6-->
+            
+            </div>
+            <!--end row-->
+            
+        </div>
+        <!--end container-->
+        
+    </section>

@@ -1,0 +1,170 @@
+@using GiapDepTrai.Utilities
+@model GiapDepTrai.Models.AddNewCustommer
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<svg class="login__blob" viewBox="0 0 566 840" xmlns="http://www.w3.org/2000/svg">
+    <mask id="mask0" mask-type="alpha">
+        <path d="M342.407 73.6315C388.53 56.4007 394.378 17.3643 391.538
+            0H566V840H0C14.5385 834.991 100.266 804.436 77.2046 707.263C49.6393
+            591.11 115.306 518.927 176.468 488.873C363.385 397.026 156.98 302.824
+            167.945 179.32C173.46 117.209 284.755 95.1699 342.407 73.6315Z" />
+    </mask>
+
+    <g mask="url(#mask0)">
+        <path d="M342.407 73.6315C388.53 56.4007 394.378 17.3643 391.538
+            0H566V840H0C14.5385 834.991 100.266 804.436 77.2046 707.263C49.6393
+            591.11 115.306 518.927 176.468 488.873C363.385 397.026 156.98 302.824
+            167.945 179.32C173.46 117.209 284.755 95.1699 342.407 73.6315Z" />
+        <image href="@Url.Content("~/Login/assets/img/bg-img3.jpg")" />
+    </g>
+</svg>
+
+<div class="login container" id="registerAccess">
+    <div class="login__access">
+        <div class="login__area">
+            <form asp-controller="Login" asp-action="Register" method="post" class="login__form">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="login__box">
+                            <input type="text" id="fullName" required placeholder=" " class="login__input" asp-for="FullName">
+                            <label for="fullName" class="login__label">Họ và tên</label>
+                            <i class="ri-user-fill login__icon"></i>
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+
+                        <div class="login__box">
+                            <input type="email" id="email" required placeholder=" " class="login__input" asp-for="Email">
+                            <label for="email" class="login__label">Email</label>
+                            <i class="ri-mail-fill login__icon"></i>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="login__box">
+                            <input type="password" id="password" required placeholder=" " class="login__input" asp-for="Passwork">
+                            <label for="password" class="login__label">Mật khẩu</label>
+                            <i class="ri-lock-fill login__icon"></i>
+                            <span asp-validation-for="Passwork" class="text-danger"></span>
+                        </div>
+
+                        <div class="login__box">
+                            <select id="gender" required class="login__input" asp-for="Gender">
+                                <option value="" disabled selected>Chọn giới tính</option>
+                                <option value="Nam">Nam</option>
+                                <option value="Nữ">Nữ</option>
+                                <option value="Khác">Khác</option>
+                            </select>
+                            <label for="gender" class="login__label">Giới tính</label>
+                            <i class="ri-user-3-fill login__icon"></i>
+                            <span asp-validation-for="Gender" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Cột bên phải -->
+                    <div class="col-md-6">
+                        <div class="login__box">
+                            <input type="tel" id="phone" required placeholder=" " class="login__input" asp-for="Phone">
+                            <label for="phone" class="login__label">Số điện thoại</label>
+                            <i class="ri-phone-fill login__icon"></i>
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+
+                        <div class="login__box">
+                            <input type="text" id="address" required placeholder=" " class="login__input" asp-for="Address">
+                            <label for="address" class="login__label">Địa chỉ</label>
+                            <i class="ri-home-4-fill login__icon"></i>
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        <div class="login__box">
+                            <input type="date" id="birthofDate" class="login__input" asp-for="BirthofDate">
+                            <label for="birthofDate" class="login__label">Ngày sinh</label>
+                            <i class="ri-calendar-fill login__icon"></i>
+                            <span asp-validation-for="BirthofDate" class="text-danger"></span>
+                        </div>
+
+                        <div class="login__box">
+                            <input type="text" id="identityCard" placeholder=" " class="login__input" asp-for="IdentityCard">
+                            <label for="identityCard" class="login__label">Số CMND/CCCD</label>
+                            <i class="ri-id-card-fill login__icon"></i>
+                            <span asp-validation-for="IdentityCard" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                @if (TempData["ErrorMessage"] != null)
+                {
+                    <div class="text-danger text-center mt-3">@TempData["ErrorMessage"]</div>
+                }
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="login__button">Đăng ký</button>
+                </div>
+
+                <p class="login__switch text-center mt-3">
+                    Bạn đã có tài khoản?
+                    <a asp-controller="Login" asp-action="Login" class="login__link">Đăng nhập ngay</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+.login__form {
+    max-width: 900px;
+    margin: auto;
+}
+
+.login__box {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.login__input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.login__label {
+    position: absolute;
+    top: -0.7rem;
+    left: 1rem;
+    background: white;
+    padding: 0 0.25rem;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.login__icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 1.25rem;
+}
+
+.login__button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login__button:hover {
+    background-color: #125cc1;
+}
+
+</style

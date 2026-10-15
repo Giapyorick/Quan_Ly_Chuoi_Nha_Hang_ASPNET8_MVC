@@ -1,0 +1,1489 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GiapDepTrai.bundle.scp.css",
+      "PackagePath": "staticwebassets\\GiapDepTrai.qt51k94q5k.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\bg-img5.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\bg-img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\bg.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\hero-bg.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\hero-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\my-profile-img.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\my-profile-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\app-1.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\app-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\app-2.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\app-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\app-3.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\app-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\books-1.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\books-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\books-2.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\books-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\books-3.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\books-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\branding-1.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\branding-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\branding-2.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\branding-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\branding-3.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\branding-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\product-1.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\product-2.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\portfolio\\product-3.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\portfolio\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\services.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\services.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\testimonials\\testimonials-1.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\testimonials\\testimonials-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\testimonials\\testimonials-2.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\testimonials\\testimonials-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\testimonials\\testimonials-3.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\testimonials\\testimonials-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\testimonials\\testimonials-4.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\testimonials\\testimonials-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\img\\testimonials\\testimonials-5.jpg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\testimonials\\testimonials-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\scss\\Readme.txt",
+      "PackagePath": "staticwebassets\\Admin\\assets\\scss\\Readme.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\aos\\aos.cjs.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\aos\\aos.cjs.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\aos\\aos.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\aos\\aos.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\aos\\aos.esm.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\aos\\aos.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\aos\\aos.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\aos\\aos.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\aos\\aos.js.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\aos\\aos.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.scss",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\css\\prb.txt",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\css\\prb.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\glightbox\\css\\glightbox.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\glightbox\\css\\glightbox.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\glightbox\\css\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\glightbox\\css\\glightbox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\glightbox\\js\\glightbox.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\glightbox\\js\\glightbox.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\glightbox\\js\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\glightbox\\js\\glightbox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\imagesloaded\\imagesloaded.pkgd.min.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\imagesloaded\\imagesloaded.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\isotope-layout\\isotope.pkgd.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\isotope-layout\\isotope.pkgd.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\isotope-layout\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\isotope-layout\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\php-email-form\\validate.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\php-email-form\\validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\purecounter\\purecounter_vanilla.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\purecounter\\purecounter_vanilla.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\purecounter\\purecounter_vanilla.js.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\purecounter\\purecounter_vanilla.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\swiper\\swiper-bundle.min.js.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\typed.js\\typed.cjs",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\typed.js\\typed.cjs"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\typed.js\\typed.cjs.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\typed.js\\typed.cjs.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\typed.js\\typed.module.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\typed.js\\typed.module.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\typed.js\\typed.module.js.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\typed.js\\typed.module.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\typed.js\\typed.umd.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\typed.js\\typed.umd.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\typed.js\\typed.umd.js.map",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\typed.js\\typed.umd.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Admin\\assets\\vendor\\waypoints\\noframework.waypoints.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\vendor\\waypoints\\noframework.waypoints.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\css\\styles.css",
+      "PackagePath": "staticwebassets\\Login\\assets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\img\\bg-img.jpg",
+      "PackagePath": "staticwebassets\\Login\\assets\\img\\bg-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\img\\bg-img2.jpg",
+      "PackagePath": "staticwebassets\\Login\\assets\\img\\bg-img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\img\\bg-img3.jpg",
+      "PackagePath": "staticwebassets\\Login\\assets\\img\\bg-img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\img\\icon-apple.svg",
+      "PackagePath": "staticwebassets\\Login\\assets\\img\\icon-apple.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\img\\icon-facebook.svg",
+      "PackagePath": "staticwebassets\\Login\\assets\\img\\icon-facebook.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\img\\icon-google.svg",
+      "PackagePath": "staticwebassets\\Login\\assets\\img\\icon-google.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\img\\mask-blob.svg",
+      "PackagePath": "staticwebassets\\Login\\assets\\img\\mask-blob.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\Login\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\scss\\base\\_base.scss",
+      "PackagePath": "staticwebassets\\Login\\assets\\scss\\base\\_base.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\scss\\components\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\Login\\assets\\scss\\components\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\scss\\components\\_login.scss",
+      "PackagePath": "staticwebassets\\Login\\assets\\scss\\components\\_login.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\scss\\config\\_variables.scss",
+      "PackagePath": "staticwebassets\\Login\\assets\\scss\\config\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\scss\\layout\\_layout.scss",
+      "PackagePath": "staticwebassets\\Login\\assets\\scss\\layout\\_layout.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\Login\\assets\\scss\\styles.scss",
+      "PackagePath": "staticwebassets\\Login\\assets\\scss\\styles.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\bootstrap\\css\\bootstrap-docs.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap-docs.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\bootstrap\\css\\prettify.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\prettify.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\bootstrap\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\bootstrap\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\bootstrap\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\bootstrap\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\bootstrap\\js\\application.js",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\application.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\bootstrap\\js\\google-code-prettify\\prettify.js",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\google-code-prettify\\prettify.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\bootstrap\\js\\holder.js",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\holder.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\css\\icons-helper.css",
+      "PackagePath": "staticwebassets\\assets\\css\\icons-helper.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\css\\icons-main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\icons-main.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\css\\style-magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style-magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\fonts\\Pe-icon-7-stroke.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Pe-icon-7-stroke.eot"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\fonts\\Pe-icon-7-stroke.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Pe-icon-7-stroke.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\fonts\\Pe-icon-7-stroke.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Pe-icon-7-stroke.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\fonts\\Pe-icon-7-stroke.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Pe-icon-7-stroke.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Chef\\chef1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Chef\\chef1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Chef\\chef2.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Chef\\chef2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Chef\\chef3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Chef\\chef3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Chef\\chef4.avif",
+      "PackagePath": "staticwebassets\\assets\\images\\Chef\\chef4.avif"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Chef\\chef4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Chef\\chef4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Chef\\chef5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Chef\\chef5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\ChooseTable.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\ChooseTable.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Customer\\Customer_0f29107b-db9f-4305-8bc0-65b304ec3ce4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Customer\\Customer_0f29107b-db9f-4305-8bc0-65b304ec3ce4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Customer\\Customer_755be892-30c0-4e30-8262-cf053e7afebc.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Customer\\Customer_755be892-30c0-4e30-8262-cf053e7afebc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Customer\\Customer_994d5cc1-0486-4f5f-a2ee-28acecd3f04c.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Customer\\Customer_994d5cc1-0486-4f5f-a2ee-28acecd3f04c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Customer\\Customer_9f87462c-7603-465d-b7d1-3850ef34e14a.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Customer\\Customer_9f87462c-7603-465d-b7d1-3850ef34e14a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Customer\\Custommer_38d4c556-f01e-4f9f-9c3f-d4f77013b37e.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Customer\\Custommer_38d4c556-f01e-4f9f-9c3f-d4f77013b37e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Customer\\Custommer_7e6831f0-a45d-4d54-b643-882911ad324e.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Customer\\Custommer_7e6831f0-a45d-4d54-b643-882911ad324e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Customer\\Custommer_c6c8413b-1be3-412b-bafd-899ad5c6f7c9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Customer\\Custommer_c6c8413b-1be3-412b-bafd-899ad5c6f7c9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Customer\\Employee_372bb35e-46ea-4e6e-aa6d-f83dd681232f.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Customer\\Employee_372bb35e-46ea-4e6e-aa6d-f83dd681232f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Customer\\Employee_eb14b533-462c-4a26-a2eb-0daf94eeace9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Customer\\Employee_eb14b533-462c-4a26-a2eb-0daf94eeace9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_10c3b550-4c66-4fcb-b114-508e2ece660a.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_10c3b550-4c66-4fcb-b114-508e2ece660a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_152a9b85-0436-4a3d-93c3-96029cdb3368.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_152a9b85-0436-4a3d-93c3-96029cdb3368.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_1a0ad2f7-22ad-4895-80e7-68be4e4f4864.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_1a0ad2f7-22ad-4895-80e7-68be4e4f4864.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_266138df-d0e5-4603-a868-42c1b02b9712.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_266138df-d0e5-4603-a868-42c1b02b9712.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_2fb78d5d-bbdc-45a8-902b-a253a1025924.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_2fb78d5d-bbdc-45a8-902b-a253a1025924.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_3bd8c6d9-e08d-44ef-bf10-665d607b0e33.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_3bd8c6d9-e08d-44ef-bf10-665d607b0e33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_3f820487-c2e8-4893-8be3-ff3d9f6b8535.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_3f820487-c2e8-4893-8be3-ff3d9f6b8535.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_51fb2829-1f68-4d8b-901d-e9732cce74b7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_51fb2829-1f68-4d8b-901d-e9732cce74b7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_58036409-4fcd-44fe-8b12-d279bb1b3b92.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_58036409-4fcd-44fe-8b12-d279bb1b3b92.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_595c985d-16bb-4095-92e0-5364dc6dee92.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_595c985d-16bb-4095-92e0-5364dc6dee92.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_67501491-6755-40cd-9543-f820c7c844fa.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_67501491-6755-40cd-9543-f820c7c844fa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_71890b60-6b0d-4629-94bd-99f3cb445df9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_71890b60-6b0d-4629-94bd-99f3cb445df9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_79750f11-fda4-4911-9811-6491b28d3fde.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_79750f11-fda4-4911-9811-6491b28d3fde.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_7e62e86f-d917-4e0b-a331-40faa134e105.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_7e62e86f-d917-4e0b-a331-40faa134e105.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_7e82e0a9-b6f7-4b52-8552-417f32925ff6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_7e82e0a9-b6f7-4b52-8552-417f32925ff6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_82a6ab18-7c55-408f-a092-2fd1c600b163.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_82a6ab18-7c55-408f-a092-2fd1c600b163.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_8829210f-f5c0-40dc-9fbe-71c9a2749a9b.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_8829210f-f5c0-40dc-9fbe-71c9a2749a9b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_9363e75c-76f7-4b3d-8030-4f456f16cdb7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_9363e75c-76f7-4b3d-8030-4f456f16cdb7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_9abd3a93-49c7-4c28-8361-bfc2ddf56605.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_9abd3a93-49c7-4c28-8361-bfc2ddf56605.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_b339f3bd-82a8-4af9-bae4-c2b115798dec.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_b339f3bd-82a8-4af9-bae4-c2b115798dec.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_caaef55f-3b7e-4769-943e-ebc20dbb5636.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_caaef55f-3b7e-4769-943e-ebc20dbb5636.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_d41e5693-e1b5-4318-8b93-4d66068a0566.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_d41e5693-e1b5-4318-8b93-4d66068a0566.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_dd1a6f9e-89f4-4457-892a-a6b05ab381e2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_dd1a6f9e-89f4-4457-892a-a6b05ab381e2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_e7f24db5-ea63-4c9b-905d-b1cc38727f0e.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_e7f24db5-ea63-4c9b-905d-b1cc38727f0e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_f487bcdf-ab6c-4c55-b18c-5ad39dc790c4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_f487bcdf-ab6c-4c55-b18c-5ad39dc790c4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Employee\\Employee_fc3e1585-5cb5-4608-b307-cd6acb2c6390.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Employee\\Employee_fc3e1585-5cb5-4608-b307-cd6acb2c6390.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\Hero2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Hero2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\ListItem\\pexels-dzenina-lukac-1583891.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\ListItem\\pexels-dzenina-lukac-1583891.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_0a3600f8-c760-4566-9646-d117816b39cb.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_0a3600f8-c760-4566-9646-d117816b39cb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_18ef17b0-161a-4bd2-90f1-b5dafa929b97.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_18ef17b0-161a-4bd2-90f1-b5dafa929b97.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_1ae19870-4d64-405e-b0da-0558895d582a.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_1ae19870-4d64-405e-b0da-0558895d582a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_26221e20-f13e-40c3-8700-108d6e912bc4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_26221e20-f13e-40c3-8700-108d6e912bc4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_34352a26-eb17-477b-a61a-0545145e3970.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_34352a26-eb17-477b-a61a-0545145e3970.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_46fc04f7-10da-4287-af68-485424b5810b.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_46fc04f7-10da-4287-af68-485424b5810b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_6810c20d-a59d-429e-9124-a135136ed8bb.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_6810c20d-a59d-429e-9124-a135136ed8bb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_68d54d60-c45b-461f-a966-5521a49796d3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_68d54d60-c45b-461f-a966-5521a49796d3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_6caeaadd-c9b0-431c-96d3-27c678699bd5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_6caeaadd-c9b0-431c-96d3-27c678699bd5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_6cfbf277-b60d-46ee-adbd-2c5ecb783b39.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_6cfbf277-b60d-46ee-adbd-2c5ecb783b39.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_923ab8da-61ca-406b-bb93-48e978fc0fbb.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_923ab8da-61ca-406b-bb93-48e978fc0fbb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_9844ae58-f5e9-46b4-8601-5ea828bac64e.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_9844ae58-f5e9-46b4-8601-5ea828bac64e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_a60e9196-b250-4693-85db-c82d8fd93af4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_a60e9196-b250-4693-85db-c82d8fd93af4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_a887436f-69c6-439d-afc6-d1db7f2ce65a.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_a887436f-69c6-439d-afc6-d1db7f2ce65a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_dc31a2f7-01cf-46c5-ae5c-ccb7d99d968b.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_dc31a2f7-01cf-46c5-ae5c-ccb7d99d968b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_dcdd573d-b0cf-412f-903a-354b232d3507.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_dcdd573d-b0cf-412f-903a-354b232d3507.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_e8600960-6baa-46b8-a42b-1a03e05ceafd.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_e8600960-6baa-46b8-a42b-1a03e05ceafd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_effd10b9-8e52-4650-86bf-0ab1df3ef6c1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_effd10b9-8e52-4650-86bf-0ab1df3ef6c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\MenuItem\\MenuItem_f293286b-6d71-4d0f-95f2-0f6b39248bc9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\MenuItem\\MenuItem_f293286b-6d71-4d0f-95f2-0f6b39248bc9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\SlideIn1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\SlideIn1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\SlideIn2.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\SlideIn2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\SlideIn3.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\SlideIn3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\a4.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\a4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\bbb.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bbb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\bg1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\bg2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\bg3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\daubep.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\daubep.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\download.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\events.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\events.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\familyDinner.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\familyDinner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\g1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\g1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\hero1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\hero1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\menu-logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\our_story.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\our_story.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\rs-logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\rs-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\rs-logo2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\rs-logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\setFood.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\setFood.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\slide1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slide1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\slide2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slide2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\images\\the_menu.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\the_menu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\SmoothScroll.js",
+      "PackagePath": "staticwebassets\\assets\\js\\SmoothScroll.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\bootstrap-hover-dropdown.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap-hover-dropdown.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\bootstrap-select.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap-select.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\bootstrap-switch.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap-switch.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\html5shiv.js",
+      "PackagePath": "staticwebassets\\assets\\js\\html5shiv.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\icon-font-ie7.js",
+      "PackagePath": "staticwebassets\\assets\\js\\icon-font-ie7.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\instafeed.js",
+      "PackagePath": "staticwebassets\\assets\\js\\instafeed.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\instagram.js",
+      "PackagePath": "staticwebassets\\assets\\js\\instagram.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\jquery-1.11.3.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-1.11.3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\jquery.nav.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.nav.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\jquery.scrollTo-min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.scrollTo-min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\respond.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\respond.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\js\\wow.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wow.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\php\\contact.php",
+      "PackagePath": "staticwebassets\\assets\\php\\contact.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\php\\register.php",
+      "PackagePath": "staticwebassets\\assets\\php\\register.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\coloredbg.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\coloredbg.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\gridtile.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\gridtile.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\gridtile_3x3.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\gridtile_3x3.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\gridtile_3x3_white.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\gridtile_3x3_white.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\gridtile_white.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\gridtile_white.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\loader.gif",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\sources\\fb.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\sources\\fb.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\sources\\fr.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\sources\\fr.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\sources\\ig.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\sources\\ig.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\sources\\post.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\sources\\post.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\sources\\revolution_slide1.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\sources\\revolution_slide1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\sources\\revolution_slide2.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\sources\\revolution_slide2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\sources\\tw.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\sources\\tw.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\sources\\vm.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\sources\\vm.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\sources\\wc.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\sources\\wc.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\assets\\sources\\yt.png",
+      "PackagePath": "staticwebassets\\assets\\revolution\\assets\\sources\\yt.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\closedhand.cur",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\closedhand.cur"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\index.php",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\layers.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\layers.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\ares.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\ares.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\custom.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\custom.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\dione.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\dione.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\erinyen.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\erinyen.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\gyges.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\gyges.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\hades.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\hades.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\hebe.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\hebe.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\hephaistos.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\hephaistos.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\hermes.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\hermes.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\hesperiden.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\hesperiden.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\metis.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\metis.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\persephone.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\persephone.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\uranus.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\uranus.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation-skins\\zeus.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation-skins\\zeus.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\navigation.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\navigation.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\openhand.cur",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\openhand.cur"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\css\\settings.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\css\\settings.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\font-awesome\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\font-awesome\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\font-awesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\font-awesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\font-awesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\font-awesome\\index.php",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\font-awesome\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\index.php",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\pe-icon-7-stroke\\css\\helper.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\pe-icon-7-stroke\\css\\helper.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\pe-icon-7-stroke\\css\\index.php",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\pe-icon-7-stroke\\css\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\pe-icon-7-stroke\\css\\pe-icon-7-stroke.css",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\pe-icon-7-stroke\\css\\pe-icon-7-stroke.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\pe-icon-7-stroke\\fonts\\Pe-icon-7-stroke.eot",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\pe-icon-7-stroke\\fonts\\Pe-icon-7-stroke.eot"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\pe-icon-7-stroke\\fonts\\Pe-icon-7-stroke.svg",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\pe-icon-7-stroke\\fonts\\Pe-icon-7-stroke.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\pe-icon-7-stroke\\fonts\\Pe-icon-7-stroke.ttf",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\pe-icon-7-stroke\\fonts\\Pe-icon-7-stroke.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\pe-icon-7-stroke\\fonts\\Pe-icon-7-stroke.woff",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\pe-icon-7-stroke\\fonts\\Pe-icon-7-stroke.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\pe-icon-7-stroke\\fonts\\index.php",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\pe-icon-7-stroke\\fonts\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\pe-icon-7-stroke\\index.php",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\pe-icon-7-stroke\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\revicons\\index.php",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\revicons\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\revicons\\revicons.eot",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\revicons\\revicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\revicons\\revicons.svg",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\revicons\\revicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\revicons\\revicons.ttf",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\revicons\\revicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\fonts\\revicons\\revicons.woff",
+      "PackagePath": "staticwebassets\\assets\\revolution\\fonts\\revicons\\revicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\index.php",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\revolution.extension.actions.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\revolution.extension.actions.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\revolution.extension.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\revolution.extension.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\revolution.extension.kenburn.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\revolution.extension.kenburn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\revolution.extension.layeranimation.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\revolution.extension.layeranimation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\revolution.extension.migration.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\revolution.extension.migration.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\revolution.extension.navigation.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\revolution.extension.navigation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\revolution.extension.parallax.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\revolution.extension.parallax.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\revolution.extension.slideanims.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\revolution.extension.slideanims.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\revolution.extension.video.min copy.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\revolution.extension.video.min copy.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\revolution.extension.video.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\revolution.extension.video.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\source\\index.php",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\source\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\source\\revolution.extension.actions.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\source\\revolution.extension.actions.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\source\\revolution.extension.carousel.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\source\\revolution.extension.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\source\\revolution.extension.kenburn.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\source\\revolution.extension.kenburn.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\source\\revolution.extension.layeranimation.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\source\\revolution.extension.layeranimation.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\source\\revolution.extension.migration.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\source\\revolution.extension.migration.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\source\\revolution.extension.navigation.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\source\\revolution.extension.navigation.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\source\\revolution.extension.parallax.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\source\\revolution.extension.parallax.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\source\\revolution.extension.slideanims.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\source\\revolution.extension.slideanims.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\extensions\\source\\revolution.extension.video.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\extensions\\source\\revolution.extension.video.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\index.php",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\jquery.themepunch.enablelog.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\jquery.themepunch.enablelog.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\jquery.themepunch.revolution.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\jquery.themepunch.revolution.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\jquery.themepunch.tools.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\jquery.themepunch.tools.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\source\\index.php",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\source\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\source\\jquery.themepunch.enablelog.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\source\\jquery.themepunch.enablelog.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\source\\jquery.themepunch.revolution.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\source\\jquery.themepunch.revolution.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\revolution\\js\\source\\jquery.themepunch.tools.min.js",
+      "PackagePath": "staticwebassets\\assets\\revolution\\js\\source\\jquery.themepunch.tools.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\sounds\\notification.mp3",
+      "PackagePath": "staticwebassets\\assets\\sounds\\notification.mp3"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\assets\\videos\\restaurant1.mp4",
+      "PackagePath": "staticwebassets\\assets\\videos\\restaurant1.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_105_20250513092123.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_105_20250513092123.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_106_20250601165658.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_106_20250601165658.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_106_20250601170034.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_106_20250601170034.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_107_20250601170522.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_107_20250601170522.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_108_20250601165842.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_108_20250601165842.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_109_20250601142740.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_109_20250601142740.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_109_20250601165547.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_109_20250601165547.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_91_20250504203258.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_91_20250504203258.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_92_20250504203328.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_92_20250504203328.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_92_20250504203943.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_92_20250504203943.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_93_20250504202000.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_93_20250504202000.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_93_20250504211300.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_93_20250504211300.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_94_20250504195555.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_94_20250504195555.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_94_20250504201640.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_94_20250504201640.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_94_20250504210605.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_94_20250504210605.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_94_20250504211047.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_94_20250504211047.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_94_20250504211528.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_94_20250504211528.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_95_20250508093356.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_95_20250508093356.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_95_20250508093947.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_95_20250508093947.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_95_20250508094334.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_95_20250508094334.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_95_20250508094443.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_95_20250508094443.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_95_20250508094538.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_95_20250508094538.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\AspNET_Core_MVC\\GiapDepTrai\\GiapDepTrai\\wwwroot\\receipts\\Order_95_20250508094827.txt",
+      "PackagePath": "staticwebassets\\receipts\\Order_95_20250508094827.txt"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GiapDepTrai.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GiapDepTrai.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GiapDepTrai.props",
+      "PackagePath": "build\\GiapDepTrai.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GiapDepTrai.props",
+      "PackagePath": "buildMultiTargeting\\GiapDepTrai.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GiapDepTrai.props",
+      "PackagePath": "buildTransitive\\GiapDepTrai.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

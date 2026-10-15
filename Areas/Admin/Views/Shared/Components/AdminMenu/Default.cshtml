@@ -1,0 +1,74 @@
+﻿@using GiapDepTrai.Models
+
+@model IList<TblAdminMenu>
+@{
+    var EmployeeIMG = Context.Session.GetString("Home_EmployeeIMG") ?? "/images/default-employee.jpg";
+    var EmployeeName = Context.Session.GetString("Home_EmployeeName") ?? "Unknown";
+    var BranchName = Context.Session.GetString("Home_BranchName") ?? "Unknown";
+}
+
+<header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="profile-img">
+        <img src="@Url.Content("/"+EmployeeIMG)" alt="@EmployeeName" class="img-fluid rounded-circle" style="height: 200px; width: 200px; overflow: hidden; object-fit: cover;">
+    </div>
+    <h1 class="logo d-flex align-items-center justify-content-center">
+        <div style = "align-items: center;">
+            <h1 class="sitename">@EmployeeName</h1>
+            <h3 style = "font-size: 16px;">@BranchName</h3>
+            
+        </div>
+    </h1>
+
+    <div class="social-links text-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <nav id="navmenu" class="navmenu">
+        <ul>
+            @foreach (var item in Model.Where(m => m.Levels == 1).OrderBy(m => m.MenuOrder))
+            {
+                var role = Context.Session.GetString("Roles");
+                var pID = item.AdmenuId;
+
+                bool hasAccess = role == "1" || 
+                                (role == "2" && item.Roles != null && item.Roles.Contains("2")) || 
+                                (item.Roles != null && item.Roles.Contains("3")); 
+
+                if (hasAccess)
+                {
+                    var smenu = Model.Where(p => p.ParentId == pID).OrderBy(p => p.MenuOrder).ToList();
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-bs-target="#@item.ItemTaget" data-bs-toggle="collapse" href="#">
+                            <i class="@item.Icon"></i><span> &nbsp; @item.AdmenuName</span><i class="bi bi-chevron-down ms-auto"></i>
+                        </a>
+                        @if (smenu.Any())
+                        {
+                            <ul id="@item.Idname" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                                @foreach (var smn in smenu)
+                                {
+                                    bool subHasAccess = role == "1" || 
+                                                    (role == "2" && smn.Roles != null && smn.Roles.Contains("2")) || 
+                                                    (smn.Roles != null && smn.Roles.Contains("3"));
+
+                                    if (subHasAccess)
+                                    {
+                                        <li>
+                                            <a style="text-decoration: none;" href="/Admin/@smn.ControllerName/@smn.ActionName">
+                                                <span> &nbsp; @smn.AdmenuName</span>
+                                            </a>
+                                        </li>
+                                    }
+                                }
+                            </ul>
+                        }
+                    </li>
+                }
+            }
+            <a href="@Url.Action("Login", "Login")" class="btn btn-logout"> <i class="fa-solid fa-right-from-bracket"></i> &nbsp; Thoát</a>
+        </ul>
+    </nav>
+</header>

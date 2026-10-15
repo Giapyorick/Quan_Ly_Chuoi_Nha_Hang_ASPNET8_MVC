@@ -1,0 +1,117 @@
+@model IEnumerable<GiapDepTrai.Models.TblReservationPayment>
+
+<div class="container payment-history-container">
+    <h4 class="history-title">Lịch sử thanh toán đặt cọc</h4>
+    <div class="table-responsive">
+        <table class="table payment-table">
+            <thead>
+                <tr>
+                    <th class="px-6 py-4 text-left">Phương thức</th>
+                    <th class="px-6 py-4 text-left">Ngày thanh toán</th>
+                    <th class="px-6 py-4 text-left">Số tiền</th>
+                    <th class="px-6 py-4 text-left">Ghi chú</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model == null || !Model.Any())
+                {
+                    <tr>
+                        <td colspan="4" class="px-6 py-4 text-center text-danger">Không có lịch sử thanh toán.</td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var pay in Model)
+                    {
+                        <tr class="border-b hover:bg-blue-50 transition-colors">
+                            <td class="px-6 py-4">@pay.PaymentMethod</td>
+                            <td class="px-6 py-4">@pay.PaymentDate?.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td class="px-6 py-4">@pay.AmountPaid.ToString("N0") VNĐ</td>
+                            <td class="px-6 py-4">@pay.Notes</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="pagination-container text-center mt-4">
+        @if (ViewBag.TotalPages > 1)
+        {
+            <nav>
+                <ul class="pagination justify-content-center">
+                    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                    {
+                        <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                            <a class="page-link" asp-action="History" asp-route-page="@i">@i</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+    </div>
+
+</div>
+
+<style>
+    .pagination .page-item .page-link {
+        color: #3498db;
+    }
+    .pagination .page-item.active .page-link {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: white;
+    }
+    .payment-history-container {
+        max-width: 1200px;
+        margin: 100px auto 50px;
+        padding: 30px;
+        background: linear-gradient(135deg, #e6f0fa, #ffffff);
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .history-title {
+        color: #2c3e50;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .table-responsive {
+        margin: 20px;
+    }
+
+    .payment-table {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+
+    .payment-table th {
+        background: linear-gradient(90deg, #3498db, #2980b9);
+        color: white;
+        padding: 15px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .payment-table td {
+        padding: 15px;
+        vertical-align: middle;
+        border-top: 1px solid #e9ecef;
+        color: #34495e;
+    }
+
+    .payment-table tbody tr:hover {
+        background: #f8f9fa;
+    }
+
+    .text-danger {
+        color: #e74c3c;
+    }
+
+</style>

@@ -1,0 +1,79 @@
+﻿@model GiapDepTrai.Models.TblPromotion
+
+<main class="flex-grow-1 p-4 bg-light">
+    <div class="container-fluid text-center">
+        <h1 class="text-gradient mb-5 animate__animated animate__fadeInDown">Cập nhật thông tin khuyến mãi</h1>
+
+        @if (Model is null)
+        {
+                <p class="text-danger animate__animated animate__shakeX">Không tìm thấy ID</p>
+        }
+        else
+        {
+                <div class="profile-card shadow-lg p-4 bg-glass rounded-3 animate__animated animate__zoomIn">
+                    <form method="post" asp-action="Edit">
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Mã khuyến mãi</label>
+                                <input type="text" class="form-control form-control-lg text-center" asp-for="PromotionId" readonly />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Tên khuyến mãi</label>
+                                <input type="text" class="form-control form-control-lg text-center" asp-for="PromotionName" required />
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Ngày bắt đầu</label>
+                                <input type="date" class="form-control form-control-lg text-center" asp-for="StartDate" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Ngày kết thúc</label>
+                                <input type="date" class="form-control form-control-lg text-center" asp-for="EndDate" required />
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Giảm</label>
+                                <input type="text" class="form-control form-control-lg text-center" asp-for="DiscountValue" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Kiểu</label>
+                                <select class="form-control" asp-for="DiscountType" required>
+                                    <option value="">-- Chọn loại --</option>
+                                    <option value="Phần trăm">Phần trăm</option>
+                                    <option value="Số tiền cố định">Số tiền cố định</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Mô tả</label>
+                                <textarea class="form-control form-control-lg text-center" asp-for="Description" required></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                
+                                <label class="form-label">Trạng thái</label>
+                                <select class="form-control" asp-for="IsActive" required>
+                                    <option value="true">Hiệu lực</option>
+                                    <option value="false">Hết hiệu lực</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 d-flex justify-content-center gap-3">
+                            <button class="btn btn-dark btn-lg px-5 shadow-sm animate__animated animate__pulse" type="submit">Lưu</button>
+                            <form method="post">
+                                <button class="btn btn-danger btn-lg px-5 shadow-sm animate__animated animate__pulse" type="submit" asp-controller="tblPromotion" asp-action="Delete">Xóa</button>
+                            </form>
+                        </div>
+
+                        <div asp-validation-summary="All" class="text-danger mt-3"></div>
+                    </form>
+                </div>
+        }
+    </div>
+</main>

@@ -1,0 +1,16 @@
+﻿===== HÓA ĐƠN GỌI MÓN =====
+ID Đơn hàng: 91
+Bàn: 2
+Thời gian: 03/05/2025 16:25:55
+Chi nhánh: 1
+Nhân viên: 1
+----------------------------
+Chi tiết món:
+- Tiramisu (Số lượng: 1, Số tiền: $60,000.00)
+  (Ghi chú: ko kem)
+- Bánh flan (Số lượng: 1, Số tiền: $40,000.00)
+  (Ghi chú: ít đường)
+----------------------------
+Tổng tiền: $100,000.00
+Cảm ơn quý khách!
+=============================

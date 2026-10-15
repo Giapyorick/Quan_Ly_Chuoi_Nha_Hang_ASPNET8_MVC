@@ -1,0 +1,174 @@
+@model GiapDepTrai.Models.TblMenuItem
+@{
+    ViewBag.Title = "Chi tiết món ăn";
+}
+
+
+<div class="container py-5" style="margin-top: 120px; margin-bottom: 100px;">
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <h2 class="mb-5 text-center fw-bold text-dark" style="font-size: 2.5rem; letter-spacing: 1px;">Chi tiết món ăn</h2>
+
+    <div class="card shadow-lg border-0 rounded-4 overflow-hidden mb-5">
+        <div class="row g-0">
+            <div class="col-md-5">
+                <img src="~/@Model.ImageUrl" class="food-image" style="width: 470px; height: 470px; object-fit: cover;" alt="Ảnh món ăn" />
+            </div>
+            <div class="col-md-7 p-4 p-md-5" style = "width: 600px; margin-left: 30px;">
+                <h3 class="fw-bold text-primary mb-3" style="font-size: 1.8rem;">@Model.ItemName</h3>
+                <p class="text-muted mb-3" style="line-height: 1.6;"><strong>Mô tả:</strong> @Model.Descriptions</p>
+                <p class="mb-3"><strong>Giá:</strong> <span class="text-success fw-bold">@Model.Price?.ToString("N0") VNĐ</span></p>
+                <p class="mb-3"><strong>Danh mục:</strong> @Model.Category?.CategoryName</p>
+                <p class="mb-3"><strong>Chi nhánh:</strong> @Model.Branch?.BranchName</p>
+                <div style="display: flex; flex-wrap: wrap; justify-content: left;" >
+                    <p class="mb-3">
+                        <strong>Tình trạng:</strong>
+                        
+                        <span class="badge rounded-pill @(Model.IsAvailable ?? false ? "bg-success" : "bg-danger")">
+                            @(Model.IsAvailable ?? false ? "Đang bán" : "Ngừng bán")
+                        </span>
+                    </p>
+                    <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div>
+                    <p class="mb-0"><strong>Đã bán:</strong> @Model.Count_Saled</p>
+                </div>
+                <form asp-controller="Cart" asp-action="AddToCart" asp-route-menuItemId="@Model.MenuItemId" method="post" style="margin-left: 15px;" class="mt-4">
+                <div class="row g-2 align-items-center">
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                        <div style = "width:28%;">
+                            <div class="col-auto">
+                                <label for="quantity" class="col-form-label">Số lượng:</label>
+                            </div>
+                            <div class="col-auto" >
+                                <input type="number" name="quantity" id="quantity" value="1" min="1" required class="form-control" style = "width:100%;" />
+                            </div>
+                            </div>
+                        <div style = "width:50%;">
+                            <div class="col-auto" >
+                                <label for="note" class="col-form-label">Ghi chú:</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="text" name="note" id="note" class="form-control" placeholder="Ghi chú (nếu có)" />
+                            </div>
+            
+                        </div>
+                        <div style="width:20%; margin-top: 25px;">
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-success" style="border-radius: 5px;">
+                                    <i class="bi bi-cart-plus"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 comment-form card p-4 p-md-5 shadow-sm border-0 rounded-3">
+        <h4 class="text-dark mb-4 fw-bold">Gửi bình luận</h4>
+        <form asp-controller="Comment" asp-action="Add" method="post">
+            <input type="hidden" name="MenuItemId" value="@Model.MenuItemId" />
+            <div class="mb-3">
+                <textarea name="Contents" rows="4" class="form-control" placeholder="Nhập bình luận của bạn..." required style="border-radius: 10px; resize: none;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+        </form>
+    </div>
+
+    <div class="mt-5">
+        <h4 class="mb-4 text-dark fw-bold">Bình luận gần đây</h4>
+        @if (Model.TblComments != null && Model.TblComments.Any())
+        {
+            <div class="list-group">
+                @foreach (var comment in Model.TblComments.OrderByDescending(c => c.CommentDate))
+                {
+                    <div class="list-group-item comment-item mb-3 rounded shadow-sm p-4">
+                        <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <strong class="d-block text-dark">@(comment.Customer?.FullName ?? "Khách")</strong>
+                                    <p class="mb-0 text-muted" style="line-height: 1.5;">@comment.Contents</p>
+                                </div>
+                                <small class="text-muted ms-3" style="font-size: 0.85rem;">@comment.CommentDate.ToString("dd/MM/yyyy HH:mm")</small>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p class="text-muted fst-italic">Chưa có bình luận nào.</p>
+        }
+    </div>
+</div>
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container {
+        max-width: 1400px;
+    }
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        padding: 10px;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+    .food-image {
+        object-fit: cover;
+        border-radius: 15px;
+        max-height: 400px;
+    }
+    .badge {
+        font-size: 0.9rem;
+        padding: 0.5em 1em;
+    }
+    .comment-form {
+        background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    }
+    .comment-item {
+        transition: background-color 0.3s ease;
+    }
+    .comment-item:hover {
+        background-color: #f1f3f5;
+    }
+    .btn-primary {
+        background: linear-gradient(45deg, #007bff, #00aaff);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: transform 0.2s ease;
+    }
+    .btn-primary:hover {
+        transform: scale(1.05);
+    }
+    .alert {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<script>
+    $(document).ready(function () {
+            var successMessage = '@TempData["SuccessMessage"]';
+            if (successMessage) {
+                alert(successMessage);
+            }
+        });
+</script>
